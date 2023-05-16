@@ -1,6 +1,6 @@
 ### internat 
 ```
-<mark>internt</mark> - The Internet is a global system of interconnected computer networks, servers.
+== internt == - The Internet is a global system of interconnected computer networks, servers.
    use standardized communication protocols to facilitate data transmission and exchange between different devices, networks, and systems
    bhut sare computers ko ak sath jodta he
 
