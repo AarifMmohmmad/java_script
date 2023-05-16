@@ -1,4 +1,7 @@
-1. <b> internt </b> - The Internet is a global system of interconnected computer networks, servers.{( bhut sare computers ko ak sath jodta he)}
+### internat
+
+```
+internt- The Internet is a global system of interconnected computer networks, servers..{( bhut sare computers ko ak sath jodta he)}
 
    use standardized communication protocols to facilitate data transmission and exchange between different devices, networks, and systems
 
@@ -20,6 +23,9 @@ A VPN, which stands for virtual private network,
 A VPN connection establishes a secure connection between you and the internet
 
 note - ip address network ki ip location hoti he
+```
+
+### new topics
 
 port  
 http ssl  

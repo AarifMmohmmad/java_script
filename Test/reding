@@ -1,3 +1,9 @@
 Hoisting 
   hoising  Just like  var, let declarations are hoisted to the top. Unlike var which is initialized as undefined, the let keyword is not initialized. So if you try to use a let variable before declaration, you'll get a Reference Error.
 
+ mchain 
+ asambly 
+ midle 
+ high level language 
+ 4k view
+ 
