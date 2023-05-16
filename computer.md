@@ -1,6 +1,6 @@
-1. internt - The Internet is a global system of interconnected computer networks, servers.
+1. <b> internt </b> - The Internet is a global system of interconnected computer networks, servers.{( bhut sare computers ko ak sath jodta he)}
+
    use standardized communication protocols to facilitate data transmission and exchange between different devices, networks, and systems
-   bhut sare computers ko ak sath jodta he
 
    typeof internat
    wired -- dsl(telephon line(micro wave ),Broad Band
@@ -9,7 +9,7 @@
 note-- interconnected or interwoven.
 internate is Interconnection and networks
 
--=part of internat
+part of internat
 hardware, software, protocols and the connection medium
 
 isp internt
@@ -24,6 +24,13 @@ note - ip address network ki ip location hoti he
 port  
 http ssl  
 articture
+server
+
+()
+design
+mvc
+factory
+signlton
 
 monolithik benifit disadvantage
 micro service benifit disadvantage
