@@ -1,4 +1,4 @@
-### internat
+# internat
 
 ```
 internt- The Internet is a global system of interconnected computer networks, servers..{( bhut sare computers ko ak sath jodta he)}
@@ -36,11 +36,11 @@ note - ip address network ki ip location hoti he,
     Yeh patterns common programming problems ke liye solutions provide karte hain aur code ko organized, maintainable, aur reusable banane mein madad karte hain.
     In patterns ko repeated problems ke liye design kiya gaya hai aur verified hai ki ye problems
 
-###
+# software development design patterns
 
-software development design patterns
+### design patterns -
 
-# design patterns - Design patterns ek pramukh tarike hote hain jo software development mein istemal kiye jaate hain.
+Design patterns ek pramukh tarike hote hain jo software development mein istemal kiye jaate hain.
 
     Yeh patterns common programming problems ke liye solutions provide karte hain aur code ko organized, maintainable, aur reusable banane mein madad karte hain.
     In patterns ko repeated problems ke liye design kiya gaya hai aur verified hai ki ye problems ke liye effective solutions hote hain.
@@ -49,7 +49,7 @@ software development design patterns
 - Singleton Pattern
 - Factory patterns
 
-# mvc --
+#### mvc --
 
 design pattern ek tarike ka blueprint hai .
 Yeh pattern code ko organize karne aur user interface se logic ko alag rakhne mein madad karta hai.
@@ -67,7 +67,7 @@ controller user actions ko handle karta hai. Yeh data model se lekar view tak ka
 - note -
   Node.js mein, aap Express.js framework ka istemal kar MVC pattern implement kar sakte hain. Express.js aapko routes ke liye controller, templates ke liye view, aur database interactions ke liye model provide karta hai. Isse aap apne Node.js applications ko organized aur modular bana sakte hain.
 
-# Singleton Pattern:
+#### Singleton Pattern:
 
 Yeh pattern ek instance ke sirf ek object ko allow karta hai. Isse ek global access point provide hota hai, jisse multiple objects ka sharing aur coordination ho sakta hai.
 
@@ -80,7 +80,7 @@ myCat = new Cat();
 return myCat;
 }
 
-# Factory Pattern:
+#### Factory Pattern:
 
 Factory pattern ek factory class ka upyog karke objects ko create karta hai. Yeh approach flexibility aur loose coupling provide karta hai, kyun ki objects ko direct create karne ki bajaye factory se create kiya jata hai.
 
