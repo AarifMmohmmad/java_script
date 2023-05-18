@@ -1,11 +1,7 @@
 # internat
 
 ```
-<<<<<<< HEAD
 internt - The Internet is a global system of interconnected computer networks, servers..{( bhut sare computers ko ak sath jodta he)}
-=======
-__internt__  The**Internet**is a global system of__interconnected__computer networks,***serve***rs..{( bhut sare computers ko ak sath jodta he)}
->>>>>>> 7959659d7faeea1d01cd5a44353791c38e0ae471
 
    use standardized communication protocols to facilitate data transmission and exchange between different devices, networks, and systems
 
@@ -36,6 +32,12 @@ note - ip address network ki ip location hoti he,
 ```
 
 ### server
+
+- server : A server stores, sends, and receives data.
+  A server is a computer or a system that provides resources, services, or functionality to other computers, devices, or clients on a network. It is designed to handle and respond to requests from client devices and deliver the requested data or services.
+
+- port number : A port, in the context of computer networking, is a logical endpoint or communication channel for network services.
+  It is a numeric identifier , the port number is used to identify the process for which the data is used.
 
 ### Architecture
 
@@ -115,18 +117,3 @@ Factory pattern ek factory class ka upyog karke objects ko create karta hai. Yeh
 function getCat() {
 return new Cat()
 }
-
-### new topics
-
-port  
-server
-
-port
-instruction ---program
-
-front beckondfront beckondfront beckond
-
-ssd hardisk
-i5 genration
-mouse how to work
-kebord type
