@@ -31,10 +31,34 @@ note - ip address network ki ip location hoti he,
        ip ko use kisi bhi network device ko information send and reciev ke liy hoti he
 ```
 
+### server
+
 ### Architecture
 
-    Yeh patterns common programming problems ke liye solutions provide karte hain aur code ko organized, maintainable, aur reusable banane mein madad karte hain.
-    In patterns ko repeated problems ke liye design kiya gaya hai aur verified hai ki ye problems
+- Web architecture refers to the overall structure of a website or web application, including the way it is designed, implemented, and deployed. It involves the use of technologies and protocols such as HTML, CSS, JavaScript, and HTTP to build and deliver web pages and applications to users.
+
+* architecture ke liy prmukh chije
+
+  1. Service Provide
+  2. Service Requester/Client
+  3. Messaging Protocols {soap , rest , json}
+
+  - NOTE : soap(Simple Object Access Protocol) , rest(Representational State Transfer) , JSON(JavaScript Object Notation ) , SOAP ek xml massage protocol he jbki REST and JSON massge ke liy hlke data ke liy use .
+
+  4. Transport Protocols {http , SMTP }
+
+  - NOTE: http(Hypertext Transfer Protocol) - It is the protocol used for communication between web browsers and web servers over the internet. It defines the format and rules for how data is transmitted and exchanged between the client (web browser) and the server.
+    SMTP - It is a standard protocol used for sending and receiving email messages over the internet. SMTP is responsible for the transmission of email from the sender's email client or server to the recipient's email server. It provides a set of rules and guidelines for how email should be formatted, transferred, and delivered
+
+  5. Security {SSL,TLS ,XML}
+     NOTE - SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a network. They are commonly used to secure data transmission over the internet, particularly in web browsers. SSL and TLS protocols ensure that the data exchanged between a client (such as a web browser) and a server remains encrypted and protected from unauthorized access or tampering.
+
+* type of Architecture
+
+1.  Microservices:
+2.  Monolithic Architecture:
+3.  three tire articher
+4.  ..
 
 # software development design patterns
 
@@ -92,11 +116,6 @@ return new Cat()
 
 port  
 server
-http ssl  
-articture
-
-monolithik benifit disadvantage
-micro service benifit disadvantage
 
 port
 instruction ---program
