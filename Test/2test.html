@@ -1,53 +1,185 @@
-Question 1
-Create a variable marks and assign any number. If marks are greater than 60 then print Pass else print Fail.
+<!DOCTYPE html>
+<html>
+   <body>
+      <script>
+         //  Question 1 Create a variable marks and assign any number. If marks are greater than 60 then print Pass else print Fail.
+         
+         let marks = 11
+         if(marks > 60){
+            console.log("pass");
+         }else {
+            console.log("fail");
+         }
+         
+         
+         
+         // Question 2
+         // Take two numbers and check if both numbers are odd or not. If yes then print Odd otherwise print Even
+         
+         
+         let num1 = 12   
+         let num2 = 12  
+            
+         
+         
+         if(num1 % 2 === 1 && num2 %2 === 1){
+            console.log(" num1 and num2 is  odd then print odd");
+         }else{
+            if(num1 % 2 === 1 && num2 %2 === 0 ){
+              console.log("num1 is a odd  and num2 is even then print even");
+            }else if(num1 %2===0 && num2 %2 ===1){
+               console.log("num1 is evena and num2 is odd then print even ");
+            }else if(num1 % 2 ===0  && num2 %2 === 0 ) {
+               console.log("num1 and num2 is even then print even ");
+            }
+            
+         
+         }
+         
+         
+         
+         // Question 3
+         // Take 4 variables a, b, c, d and assign their values in the way mentioned below and check output: a = b b = c c = d d = a
+         let a = 1 ;
+         let b = 2 ; // let 
+         let c= 3 ;
+         let d = 4  ;
+         
+         a = b 
+         b = c 
+         c= d
+         d=a
+         
+         // console.log(a, b ,c, d );  // 2,3,4 2 
+         // Question 4
+         // Print 2's table using ** operator. Use any logic but it should print 2's table.f
+         console.log(2**1 + "\n" , 2**2 + "\n" , 2**3 - 2 + "\n",2**3 + "\n", 2 **3 +2 + "\n", 2**3 + 4+ "\n",2**3 +6 + "\n",2**4+ "\n", 2**4 +2 + "\n",2**4 +4  );
+         
+         
+         // Question 5
+         // Check output of following and validate your answers
+         
+         
+         
+         console.log(2+5*10-20**2);                    // (-348)
+         console.log(20/5*10+10)                       // (50)
+         console.log( 10 && 20 + 10 * 10)              // (120)
+         console.log(30 > 20 && 10 + 4 < 15)           // (true)
+         console.log(30 > 20 && 10 + 4 < 15 || 10)     // (true)
+         console.log(30 < 20 || 10 + 5 < 15 || 10)      // (10)
+         console.log(30 < 20 || 10 + 5 < 15 && 10)     // (false)
+         
 
-Question 2
-Take two numbers and check if both numbers are odd or not. If yes then print Odd otherwise print Even
 
-Question 3
-Take 4 variables a, b, c, d and assign their values in the way mentioned below and check output: a = b b = c c = d d = a
+         NOTE = "&& operter me agr comper me frist true then sec  print and frist falsy then frist print , || opreter me frist true then frist print and frist falsy then sec print " 
 
-Question 4
-Print 2's table using ** operator. Use any logic but it should print 2's table.
+         // Question 6
+         // Take a number and check if number is odd or not. If number is Odd then print Yes else print No
+         let num = 22
+         if(num % 2 == 1){
+            console.log("odd");
+         }else{
+            console.log("even")
+         }
+         // Question 7
+         // Take a number and check if number is divisible by 10 && 5. If yes then print Yes else print no
+         var number = 10
+         if(number%5===0 && number %10 ==0){
+            console.log("Yes");
+         }else{
+            console.log("No");
+         }
 
-Question 5
-Check output of following and validate your answers
+         // Question 8
+         // Take a number and check if number * 20 makes it 100 or not. If yes the print Yes else print No
+         var number = 5
+         if(number * 20 === 100){
+            console.log("question 8 -----","yes");
+         }else{
+            console.log("question 8 -----","NO");
+         }
+         // Question 9
+         // Calculate your 10th percentage and print Pass or Fail if marks are more than 70 then print Pass else print Fail
+         let english = 90
+         let hindi = 23
+         let math = 22
+         let science = 44
+         let socialScience = 99
+         const CalculateMarks = english + hindi +science + socialScience + math
+         const persentage = CalculateMarks / 5 
+         console.log("persentage",persentage);
 
-2+5*10-20**2
-20/5*10+10
-10 && 20 + 10 * 10
-30 > 20 && 10 + 4 < 15
-30 > 20 && 10 + 4 < 15 || 10
-30 < 20 || 10 + 5 < 15 || 10
-30 < 20 || 10 + 5 < 15 && 10
-Question 6
-Take a number and check if number is odd or not. If number is Odd then print Yes else print No
+         // Question 10
+         // Take your age and check if your age is greater than 21 then print Adult else print Minor
+         let age = 23
+         if(age >21){
+            console.log("Adult")
+         }else{
+            console.log("Minor");
+         }
 
-Question 7
-Take a number and check if number is divisible by 10 && 5. If yes then print Yes else print no
+         
+         // Question 11
+         // Convert all if-else solutions to ternary operator solution. So instead of using if-else, use ternary operator.
+         
+         num%2==1 ? console.log("odd") : console.log("even");
+         age >21 ? console.log("Adult"):console.log("Minor");
+         // Question 12
+         // Implement mark-sheet logic
+         
+         // Take a field percentage
+         // If percentage is >= 80 then print Distinction
+         // If percentage is >= 60 and < 80 then print First division
+         // If percentage >= 33 and < 60 then print Second division
+         // if percentage < 33 then print Fail
 
-Question 8
-Take a number and check if number * 20 makes it 100 or not. If yes the print Yes else print No
+         let percentage = 55
+         if(persentage >=80){
+         console.log("Distinction");
+         }else if(persentage <80 && persentage >=60){
+          console.log("First division");
+         }else if(persentage <60 && percentage >=33){
+         console.log(" Second division");
+         }else if (persentage <33){
+            console.log("Fail");
+         }else{
+            console.log("please enter valid impomation ");
+         }
+         // Question 13
+         // Find maximum of 2 numbers
 
-Question 9
-Calculate your 10th percentage and print Pass or Fail if marks are more than 70 then print Pass else print Fail
+         var  number1 =124
+         var number2 =123
+         
+         if(number1 < number2 ){
+            console.log("number2 is max " + number2);
+         }else if (number2 <number1){
+            console.log("number1 is max " + number1);
+         }else {
+            console.log("two numbe are same ");
+         }
+         // Question 14
+         // Find maximum of 3 numbers
+         
+         var  number1 =12
+         var number2 =12
+         var number3 = 0
+         if(number1 > number2 &&number1 > number3){
+            console.log("number1 is max " + number1);
+         }else if(number2 > number1 &&number2 > number3){
+          console.log("number 2 is max" + number2);
+         }else if(number3 > number1 &&number3 > number2){
+            console.log("number3 is max " + number3);
+         }else if(number1 === number2 && number2 === number3 && number1 === number3) {
+            console.log("three number are same " , number1 , number2 , number3)
+         }else  if(number1 === number2){
+            console.log("number1 and number2 are same" ,number1 , number2 );
+         }else if(number1 === number3){
+            console.log("number1 and number3 are same " ,  number1 , number3);
+         }else if(number3 === number2){
+            console.log("number2 and number3 are same " , number2 , number3);
+         }
 
-Question 10
-Take your age and check if your age is greater than 21 then print Adult else print Minor
-
-Question 11
-Convert all if-else solutions to ternary operator solution. So instead of using if-else, use ternary operator.
-
-Question 12
-Implement mark-sheet logic
-
-Take a field percentage
-If percentage is >= 80 then print Distinction
-If percentage is >= 60 and < 80 then print First division
-If percentage >= 33 and < 60 then print Second division
-if percentage < 33 then print Fail
-Question 13
-Find maximum of 2 numbers
-
-Question 14
-Find maximum of 3 numbers
+         </script>
+   </body>
+</html>
