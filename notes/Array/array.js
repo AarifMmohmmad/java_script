@@ -68,3 +68,25 @@ console.log(sort);
 let b = [1, 23, 4, 5];
 console.log(b.reverse(), "69");
 console.log(b);
+
+// spilce  --- splice can be used to add new items to any array
+
+let c = [1, 2, 34, 5, 6, 7];
+
+ret = c.splice(1, 1); // original array ko modifiy krta he
+console.log(ret); // retrun krata jo elemet htaya he
+console.log(c);
+
+console.log(c.slice(3, 2), "80"); // not sported
+
+// slice  --- slice out a pice from an array , / it creat a new array
+
+let d = [12, 3, 4, 5];
+
+r = d.slice(1, 2); //Returns a copy of a section of an array.
+console.log(d.slice(1)); // sec prometer ye last element tk lega
+console.log(r);
+console.log(d);
+
+console.log(d.slice(-2), "89"); // given negtive index
+console.log(d.slice(3, 2)); // not sported

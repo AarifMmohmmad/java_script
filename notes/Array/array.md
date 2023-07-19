@@ -115,7 +115,23 @@ console.log(a); // [1, 23, 34, 9, 0, 0,  8,  8, 7]
 
 #### splice --
 
+```
+// spilce  --- splice can be used to add new items to any array
+
+let c = [1, 2, 34, 5, 6, 7];
+
+ret = c.splice(1, 1); // original array ko modifiy krta he
+console.log(ret); // retrun krata jo elemet htaya he
+console.log(c);
+
+```
+
 #### slice
+
+```
+
+
+```
 
 #### reverse
 
@@ -150,3 +166,7 @@ some
 every
 flat
 flatMap
+
+## lopes in array
+
+#### defrence between slice and splice
