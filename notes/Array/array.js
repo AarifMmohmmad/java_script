@@ -1,7 +1,5 @@
 // Array
 
-const { del } = require("request");
-
 let array = [1, 23, 34];
 
 // 1. tostring
@@ -12,6 +10,15 @@ console.log(array.toString()); // array converd to string
 console.log(array.join("-")); // 1-23-34
 console.log(array.join("")); // 12334
 console.log(array.join()); // 1,23,34
+
+// indexof
+
+let arrays = [1, 23, 34];
+console.log(arrays.indexOf(1));
+
+// inculdes
+let arrays1 = [1, 23, 34];
+console.log(arrays1.includes(1));
 
 // pop  -- remove last element and update original array       . poped retrn the poped element
 
@@ -90,3 +97,31 @@ console.log(d);
 
 console.log(d.slice(-2), "89"); // given negtive index
 console.log(d.slice(3, 2)); // not sported
+
+let e = [12, 3, 4, 5];
+//every -- checks if all elements in an array satisfy a specific condition. It returns a Boolean value
+
+save = e.every((valul) => valul > 2);
+console.log(save);
+// some --- check if at least one element in the array satisfies a specific condition. It returns a Boolean value
+save = e.some((valul) => valul < 2);
+console.log(save);
+
+// find -- search for an element in array based on a specific condition. It returns the first element in the array that satisfies the given condition.
+let ar = [12, 3, 4, 5];
+console.log(ar.find((value) => value % 2 == 0));
+
+// flat ----Returns a new array with all sub-array elements concatenated into it recursively up to the pecified depth.
+let f = [12, 3, 4, 5];
+console.log(f.flat(1)); // one depth clear
+console.log(f.flat(Infinity)); // all depth clear
+
+// flatmap --Calls a defined callback function on each element of an array. Then, flattens the result
+// into a new array. This is identical to a map followed by flat with depth 1.
+let g = [12, 3, 4, 5];
+console.log(g.flatMap((value) => [value + 1]));
+
+save = g.reduce((pres, crunt) => pres + crunt);
+console.log(save);
+
+console.log(g.at(2));
