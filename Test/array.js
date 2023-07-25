@@ -99,3 +99,88 @@ empty.shift(); //[5,6,1,7]
 
 console.log(empty); //[5,6,1,7]
 // Now check the result and match
+
+//1. Find value greater than 20 using find function
+
+let arr1 = [1, 2, 3, 5, 61, 5];
+save = arr1.find((value) => value >= 20);
+console.log(save, 107);
+
+// 2. Find string length greater than 10 using find function
+let arr2 = ["hello", "hiii", "aarif mohammad"];
+save = arr2.find((value) => value.length > 10);
+console.log(save);
+
+// 3. Filter all numbers less than 100
+let arr3 = [1, 2, 3, 5, 61, 115];
+save = arr3.filter((value) => value < 100);
+console.log(save);
+
+// 4. Filter all numbers greater than 50 and multiple of 5
+let arr4 = [1, 2, 3, 5, 61, 115];
+save = arr3.filter((value) => value < 100 && value % 5 === 0);
+console.log(save);
+
+// 5. Filter all words with length > 5 and contains world 'World' in itself for example Hello World, Computer World
+let arr5 = ["helloworld", "hiii", "aarif mohammad", "compter"];
+
+savestr = arr5.filter((value) => value.length > 5 && value.includes("world"));
+console.log(savestr);
+
+// 6. Calculate sum of all the numbers of array using reduce function
+let arr6 = [1, 2, 3, 5, 61, 115];
+save = arr6.reduce((pres, cruntv) => pres + cruntv);
+console.log(save);
+
+// 7. Calculate total words with length > 5 in an array using reduce and filter function. Dono se krna hai alag alag
+
+let arr7 = ["hello", "hiii", "aarif mohammad", "compter"];
+
+console.log(arr7.filter((value) => value.length > 5).length);
+
+save = arr7.reduce((pres, cru) => {
+  if (cru.length > 5) {
+    cru = 1;
+    return pres + cru;
+  } else {
+    return pres;
+  }
+}, 0);
+console.log(save);
+// 8. Convert any odd number to even number using map function
+
+let arr8 = [1, 2, 3, 5, 61, 115];
+
+save = arr8.map((value) => {
+  if (value % 2 == 1) {
+    return value + 1;
+  } else {
+    return value;
+  }
+});
+console.log(save);
+
+// 9. Convert any even number to odd number using map function
+
+let arr9 = [1, 2, 3, 5, 61, 115];
+
+save = arr9.map((value) => {
+  if (value % 2 == 0) {
+    return value + 1;
+  } else {
+    return value;
+  }
+});
+console.log(save);
+
+// 10. Check if every number is multiple of 5 or not in the array using every function
+
+let arr10 = [1, 2, 3, 5, 61, 115];
+save = arr10.every((value) => value % 5 == 0);
+console.log(save);
+
+// 11. Check if any number is multiple of 5 and less than 10 using some function
+
+let arr11 = [1, 2, 3, 5, 61, 115];
+save = arr11.some((value) => value % 5 == 0 && value < 10);
+console.log(save);
