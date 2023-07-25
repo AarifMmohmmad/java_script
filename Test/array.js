@@ -1,30 +1,56 @@
 // 1. Check if the array is sorted in ascending order.
 
-let array1 = [1, 4, 5, 6, 7, 8];
-let sortedArray = [1, 4, 5, 6, 7, 8].sort((a, b) => a - b);
+let array1 = [1, 4, 5, 6, 78, 9];
+// let sortedArray = [1, 4, 5, 6, 7, 8].sort((a, b) => a - b);
 
-if (array1.toString() == sortedArray.toString()) {
-  console.log("array sorted");
-} else {
-  console.log("not sorted");
+// if (array1.toString() == sortedArray.toString()) {
+//   console.log("array sorted");
+// } else {
+//   console.log("not sorted");
+// }                                     --------------------//frist solution
+function checkarray() {
+  for (let i = 1; i < array1.length; i++) {
+    if (!(array1[i] > array1[i - 1])) {
+      return "array id not sorted";
+    }
+  }
+  return "array sorted";
 }
+console.log(checkarray(array1));
+
 // 2. Check if the array is sorted in descending order.
-let array2 = [1, 23, 4, 5, 6, 7, 8, 5];
-let sortedArray2 = [1, 23, 4, 5, 6, 7, 8, 5].sort((a, b) => a + b);
+let array2 = [8, 7, 6, 44];
+// let sortedArray2 = [1, 23, 4, 5, 6, 7, 8, 5].sort((a, b) => a + b);
 
-if (array1.toString() == sortedArray.toString()) {
-  console.log("array sorted");
-} else {
-  console.log("not sorted");
+// if (array1.toString() == sortedArray2.toString()) {
+//   console.log("array sorted");
+// } else {
+//   console.log("not sorted");
+// }                               //---------frist method
+
+function checkarray2() {
+  for (let i = 1; i < array2.length; i++) {
+    if (!(array2[i] < array2[i - 1])) {
+      return "array is not sorted";
+    }
+  }
+  return "array sorted";
 }
+console.log(checkarray2(array2));
 // 3. Concat two Arrays but without using concat function
 let array3 = [1, 23, 4, 5, 6, 7, 8, 5];
 let arrayConct3 = [1, 23, 4, 5, 6, 7, 8, 5];
 
-array3.push(arrayConct3);
-array3.flat(); // frist method
-concat = [array3 + arrayConct3].flat(); // second method
-spred = [...array3, ...arrayConct3]; // thirod method
+// array3.push(arrayConct3);
+// array3.flat(); // frist method
+// concat = [array3 + arrayConct3].flat(); // second method
+// spred = [...array3, ...arrayConct3]; // thirod method
+
+for (let value of arrayConct3) {
+  array3.push(value);
+}
+console.log(array3);
+/*
 
 // 4. Count the total number of odd numbers in the array
 let arrayOdd4 = [1, 23, 4, 5, 6, 7, 8, 5];
@@ -184,3 +210,4 @@ console.log(save);
 let arr11 = [1, 2, 3, 5, 61, 115];
 save = arr11.some((value) => value % 5 == 0 && value < 10);
 console.log(save);
+*/
