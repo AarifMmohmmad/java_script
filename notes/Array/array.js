@@ -125,3 +125,9 @@ save = g.reduce((pres, crunt) => pres + crunt);
 console.log(save);
 
 console.log(g.at(2));
+
+let ab = [1, 23, 45, 5, 6, 5, 3, 6];
+
+save = ab.findIndex((value) => value > 70);
+console.log(save);
+// Returns the index of the first element in the array where predicate is true, and -1 otherwise.

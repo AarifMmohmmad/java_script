@@ -59,6 +59,8 @@ let arraySort = [9, 0, 10, 8, 87, 7];
 // if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise.
 // If omitted, the elements are sorted in ascending, ASCII character order.
 // Sorts an array in place. This method mutates the array and returns a reference to the same array.
+
+// ye tin value retrun krta he 0 1 -1
 function comper(a, b) {
 return b - a; // b-a == desending order and a-b == acending order
 }
@@ -218,6 +220,16 @@ let ar = [12, 3, 4, 5];
 console.log(ar.find((value) => value % 2 == 0));
 ```
 
+#### findIndex
+
+```
+Returns the index of the first element in the array where predicate is true, and -1 otherwise.
+let ab = [1, 23, 45, 5, 6, 5, 3, 6];
+
+save = ab.findIndex((value) => value > 70);
+console.log(save);
+```
+
 #### flat
 
 ```
@@ -296,5 +308,13 @@ console.log(value , index)
 
 #### defrence between slice and splice
 
+```
 slice returns a piece of the array but it doesn't affect the original array.
 splice changes the original array by removing, replacing, or adding values and returns the affected values.
+```
+
+#### defrence between map and foreach
+
+```
+The map() method returns a new array, whereas the forEach() method does not return a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+```
