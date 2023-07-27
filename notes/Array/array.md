@@ -318,3 +318,9 @@ splice changes the original array by removing, replacing, or adding values and r
 ```
 The map() method returns a new array, whereas the forEach() method does not return a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 ```
+
+#### defrence between findIndex and indexof
+
+```
+indexOf is a method available for both arrays and strings in JavaScript, used to search for the first occurrence of a value using strict equality. findIndex is a higher-order function specifically designed for arrays, used to search for the first element that satisfies a condition specified by a callback function.
+```

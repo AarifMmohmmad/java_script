@@ -131,3 +131,16 @@ let ab = [1, 23, 45, 5, 6, 5, 3, 6];
 save = ab.findIndex((value) => value > 70);
 console.log(save);
 // Returns the index of the first element in the array where predicate is true, and -1 otherwise.
+
+
+let a = 123;
+let b = a;
+console.log(a, b); // a and b equal
+a = 1234;
+console.log(a, b); // a and b not equal
+
+let ab = [1, 23, 4, 57];
+let abc = ab;
+console.log(ab, abc); //ab and abc equal
+ab.sort((a, b) => a - b);
+console.log(ab, abc); // ab and abc equal . but line number 5 ke according dono equal nhi hone chahiy
