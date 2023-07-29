@@ -37,7 +37,9 @@ function checkarray2() {
   return "array sorted";
 }
 console.log(checkarray2(array2));
+
 // 3. Concat two Arrays but without using concat function
+
 let array3 = [1, 23, 4, 5, 6, 7, 8, 5];
 let arrayConct3 = [1, 23, 4, 5, 6, 7, 8, 5];
 
@@ -72,6 +74,7 @@ console.log(countEven);
 let array6 = [1, 23, 4, 5, 6, 7, 8, 5];
 let newArray = [];
 // console.log(newArray.push(array6), newArray.flat());
+
 array6.forEach((value) => newArray.push(value));
 console.log(newArray);
 

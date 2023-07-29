@@ -17,6 +17,15 @@ primitive data types (Number, String, Boolean, null, undefined, and symbol).
 - The keys and values are separated by a colon(“:”).
 - Each key or value pair is separated by a comma.
 
+#### object properties : key and value
+
+```
+object ki do properties hoti he key or value
+
+an object is a collection of key-value pairs.
+ The "key" in an object refers to the unique identifier that is used to access its corresponding "value".
+```
+
 #### Object creat types
 
 1.  object literal
@@ -70,7 +79,6 @@ me.name = 'Mukul';
 me.isStudying = true;
 me.printIntroduction();
 
-
 ```
 
 4. es6
@@ -100,7 +108,34 @@ console.log(object["name"]);
 
 #### nested -- array function object
 
-#### Uses of this in Object
+```
+nested Array ---
+     an array inside an object is a way to store multiple values in a single property of an object.
+     This property can be accessed using the dot notation or square bracket notation.
+    example-  const car = {
+                make: "Toyota",
+                features: ["red", "2.5L", "automatic"]   // multipal value store
+                };
+nested object ---
+        const car = {
+                make: "Toyota",
+                features:{color:"red",fuel : "2.5L",}
+                };
+
+nested in function ----
+    objects can contain functions as properties, which are called "methods". These methods can be accessed and invoked using dot notation.
+    example -let car = {
+            start: function() {
+            console.log('Starting the car...')
+              },
+           stop: function() {
+            console.log('Stopping the car.')
+            }
+            }
+            car.start(); // Output: Starting the car...
+```
+
+#### Uses of this in Objecte
 
 #### Refrence of object
 
