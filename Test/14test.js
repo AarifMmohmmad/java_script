@@ -35,7 +35,6 @@ function longcheck(arr) {
   return largestString;
 }
 console.log(longcheck(string), "36");
-/*
 // Write a function that takes an array of numbers and returns the largest number in the array.
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -110,4 +109,3 @@ console.log(save);
 // // Example usage
 // let arr = ['hello', 'world'];
 // console.log(flattenStrings(arr)); // Output: ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
-*/
