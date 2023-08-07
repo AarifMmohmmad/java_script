@@ -226,3 +226,40 @@ console.log(save);
 // }
 
 // console.log(array([1, 2, 3], [3, 4, 5]));
+
+// 1. Ek numbers ka Array bnana hai. Numbers me se jo max number hai vo find out Krna hai but reduce function se Krna hai ye only
+// let nums1 = [1, 2, 3, 5, 61, 115];
+// let maxnum = 0;
+// let max = nums1.reduce((pre, crunt) => {
+//   if (pre > crunt) {
+//     return pre;
+//   } else {
+//     return crunt;
+//   }
+// });
+// console.log(max);
+
+// 3. Ek array bnana hai numbers ka aur isme ye btana hai ki kaunsa number kitni bar repeat hua hai
+let nums2 = [1, 2, 5, 2, 3, 5, 61, 3, 115, 3, 1];
+counting = nums2.map((num) => {
+  let count = 0;
+  for (let value of nums2) {
+    if (num == value) {
+      ++count;
+    }
+  }
+  return `${num}:${count}`;
+});
+let set = new Set(counting);
+// console.log(counting);
+// For example
+// 1,2,2,4,5,3,5,5
+
+// To answer aana chahiye
+// 1:1, 2:2, 4:1, 3:1, 5:5
+
+// 3. Ek array bnana hai numbers ka. Ab is array me kaunsa number sbse jyada bar repeat hua hai vo btana hai. For example: 1,2,2,3,4,5 to answer aana chahiye 2 because 2 numbers 2 bar repeat hua hai.
+
+// 4. Kisi array me total kitne numbers duplicate the vo btana hai. Like 1,1,2,3,4,4,1,2
+
+// To isme total 3 numbers duplicate hai Jo firse repeat hue hai 1,2 and 5
