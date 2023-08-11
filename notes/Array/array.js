@@ -72,7 +72,7 @@ console.log(sort);
 
 // reverc arrray -- yhe hmare array ko reverse kr deta he / ye orginal array ko chenge krta he
 
-let b = [1, 23, 4, 5];
+// let b = [1, 23, 4, 5];
 console.log(b.reverse(), "69");
 console.log(b);
 
@@ -126,7 +126,7 @@ console.log(save);
 
 console.log(g.at(2));
 
-let ab = [1, 23, 45, 5, 6, 5, 3, 6];
+// let ab = [1, 23, 45, 5, 6, 5, 3, 6];
 
 save = ab.findIndex((value) => value > 70);
 console.log(save);
@@ -144,3 +144,4 @@ let abc = ab;
 console.log(ab, abc); //ab and abc equal
 ab.sort((a, b) => a - b);
 console.log(ab, abc); // ab and abc equal . but line number 5 ke according dono equal nhi hone chahiy
+

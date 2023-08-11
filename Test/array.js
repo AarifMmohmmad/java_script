@@ -240,18 +240,36 @@ console.log(save);
 // console.log(max);
 
 // 3. Ek array bnana hai numbers ka aur isme ye btana hai ki kaunsa number kitni bar repeat hua hai
-let nums2 = [1, 2, 5, 2, 3, 5, 61, 3, 115, 3, 1];
-counting = nums2.map((num) => {
-  let count = 0;
-  for (let value of nums2) {
-    if (num == value) {
-      ++count;
-    }
-  }
-  return `${num}:${count}`;
-});
-let set = new Set(counting);
-// console.log(counting);
+// let nums2 = [1, 2, 5, 2, 3, 5, 61, 3, 115, 3, 1];
+// let map = new Map();
+// let maxrepetnum = 0;
+// let max = 0;
+// nums2.forEach((num) => {
+//   let count = 0;
+//   for (let value of nums2) {
+//     if (num == value) {
+//       map.set(value, ++count);
+//     }
+//   }
+// });
+// map.forEach((value, key) => {
+//   if (max <= value) {
+//     max = value;
+//     maxrepetnum = key;
+//   }
+// });
+// console.log(maxrepetnum);
+// counting = nums2.map((num) => {
+//   let count = 0;
+//   for (let value of nums2) {
+//     if (num == value) {
+//       ++count;
+//     }
+//   }
+//   return `${num}:${count}`;
+// });
+// let set = new Set(counting);
+// console.log(set);
 // For example
 // 1,2,2,4,5,3,5,5
 
@@ -259,7 +277,41 @@ let set = new Set(counting);
 // 1:1, 2:2, 4:1, 3:1, 5:5
 
 // 3. Ek array bnana hai numbers ka. Ab is array me kaunsa number sbse jyada bar repeat hua hai vo btana hai. For example: 1,2,2,3,4,5 to answer aana chahiye 2 because 2 numbers 2 bar repeat hua hai.
-
+// let nums2 = [1, 2, 5, 2, 3, 5, 61, 3, 115, 3, 1];
+// let map = new Map();
+// let maxrepetnum = 0;
+// let max = 0;
+// nums2.forEach((num) => {
+//   let count = 0;
+//   for (let value of nums2) {
+//     if (num == value) {
+//       map.set(value, ++count);
+//     }
+//   }
+// });
+// map.forEach((value, key) => {
+//   if (max <= value) {
+//     max = value;
+//     maxrepetnum = key;
+//   }
+// });
+// console.log(maxrepetnum);
 // 4. Kisi array me total kitne numbers duplicate the vo btana hai. Like 1,1,2,3,4,4,1,2
-
+// let nums2 = [1, 2, 5, 2, 3, 5, 61, 3, 115, 3, 1];
+// let map = new Map();
+// let duplicatenum = [];
+// nums2.forEach((num) => {
+//   let count = 0;
+//   for (let value of nums2) {
+//     if (num == value) {
+//       map.set(value, ++count);
+//     }
+//   }
+// });
+// map.forEach((value, key) => {
+//   if (value > 1) {
+//     duplicatenum.push(key);
+//   }
+// });
+// console.log(duplicatenum);
 // To isme total 3 numbers duplicate hai Jo firse repeat hue hai 1,2 and 5
