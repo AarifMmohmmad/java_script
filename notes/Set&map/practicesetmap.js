@@ -121,3 +121,24 @@ myMap.set([1, 2, 3], "Hello World!");
 // console.log(maps);
 // let obj = { 1: 4122, 2: 1422, 3: 1224, true: 1242 };
 // console.log(obj);
+console.log("hii");
+const weakmap = new WeakMap();
+// weakmap.set(1, 100); // error Invalid value used as weak map key
+// weakmap.set(2, 200);// primitive data ko key ke roop me allow nhi krta he
+
+obj1 = { name: "aarif" };
+obj2 = { name: "aarif2" };
+obj3 = { name: "aarif3" };
+obj4 = { name: "aarif4" };
+weakmap.set(obj1, 100); // right way
+weakmap.set(obj2, 200); // right way
+weakmap.set(obj3, 300); // right way
+weakmap.set(obj4, 400); // right way
+console.log(weakmap); // print -- WeakMap {{…} => 100, {…} => 200, {…} => 400, {…} => 300}
+
+obj1 = null;
+for (let i = 0; i <= 10000; i++) {
+  // active garbj collector and delet faltu ka data
+  console.log(i);
+}
+console.log(weakmap); // print  -- {{…} => 200, {…} => 400, {…} => 300}

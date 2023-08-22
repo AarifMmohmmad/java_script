@@ -3,13 +3,13 @@
 A Map holds key-value pairs where the keys can be any datatype.
 A Map remembers the original insertion order of the keys.
 
-
 ```
 NOTE-- yhe object ki trhe hi he lkin khuch alg he jse
 Maps have methods for getting the size, checking if a key exists, adding and removing elements, and more.
 ```
 
-* Creating new map
+- Creating new map
+
 ```javaScript
 
 To create a new map in JavaScript, you can use the Map constructor function. Here's an example:
@@ -22,7 +22,9 @@ const myMap = new Map([
   ['key2', 'value2']
 ]);
 ```
-* Adding value in map
+
+- Adding value in map
+
 ```javaScript
 const map = new Map()
 map.add(key,value)
@@ -30,38 +32,44 @@ map.add(1,123)
 map.add("a","abc")
 ```
 
-* Chaining in map
+- Chaining in map
+
 ```javaScript
 
 
 ```
 
-* .get function
+- .get function
+
 ```javaScript
-map.get(key)  
+map.get(key)
 // retrun a value agr value nhi to retrun a false
 ```
 
-* .has function
+- .has function
+
 ```javaScript
-map.has(key)  
+map.has(key)
 //  retrun a true agr value nhi to retrun a false
 
 ```
 
-* .size function
+- .size function
+
 ```javaScript
 map.size
-// retrun a number of key in map 
+// retrun a number of key in map
 ```
 
-* .clear function
+- .clear function
+
 ```javaScript
 map.clear()
-// clear a map 
+// clear a map
 ```
 
-* Array as key
+- Array as key
+
 ```javaScript
 
 const myMap = new Map();
@@ -72,19 +80,20 @@ myMap.set(myArray, "Hello World!");
 myMap.set([1, 2, 3], "Hello World!");
 
 console.log(myMap.get(myArray)); // Output: "Hello World!"
-console.log(myMap.get([1, 2, 3])); //  undifiend   // yhe alg array he kyuki [1, 2, 3] == [1, 2, 3] brabr nhi he yhe alg alg he enka refrence bhi alg he 
+console.log(myMap.get([1, 2, 3])); //  undifiend   // yhe alg array he kyuki [1, 2, 3] == [1, 2, 3] brabr nhi he yhe alg alg he enka refrence bhi alg he
 
 
 ```
 
-* Iteration of Map
+- Iteration of Map
+
 ```javaScript
 In JavaScript, iteration of Map can be done using methods like `forEach`, `for...of` or `entries`.
 
 
 const map = new Map();
 
-map.set(1, 4122); 
+map.set(1, 4122);
 map.set(2, 1422);
 map.set(3, 1224);
 map.set(4, 1242);
@@ -92,13 +101,14 @@ map.set(4, 1242);
 
 console.log(map.entries(), map.keys(), map.values());
 
-output 
-[Map Entries] { [ 1, 4122 ], [ 2, 1422 ], [ 3, 1224 ], [ 4, 1242 ] } 
+output
+[Map Entries] { [ 1, 4122 ], [ 2, 1422 ], [ 3, 1224 ], [ 4, 1242 ] }
 [Map Iterator] { 1, 2, 3, 4 }
  [Map Iterator] { 4122, 1422, 1224, 1242 }
 ```
 
-*  Map to array  array to map
+- Map to array array to map
+
 ```javaScript
 
 let array = [
@@ -107,13 +117,14 @@ let array = [
   [3, 4],
   [4, 5],
 ];
-const map = new Map([...array]);   // convert array to map 
+const map = new Map([...array]);   // convert array to map
 
 const arrays = [...map]     /// convert map to array
 const myArray = Array.from(myMap);
 ```
 
-* Object to map  && map to object
+- Object to map && map to object
+
 ```javaScript
 
 const map = new Map();
@@ -123,20 +134,47 @@ map.set(1, 4122);map.set(2, 1422);map.set(3, 1224);map.set(4, 1242);
 
 obj = {};
 map.forEach((value, key) => {
-  obj[key] = value;                     // maps to converd object 
+  obj[key] = value;                     // maps to converd object
 });
 
-console.log(obj);  // converted object 
-Object.entries(obj)     // yhe hme object ki key value pair ko ak array me convert krke deta he  ak array ke sath me 
+console.log(obj);  // converted object
+Object.entries(obj)     // yhe hme object ki key value pair ko ak array me convert krke deta he  ak array ke sath me
 obmm = new Map(Object.entries(obj));    // convert object to map
 console.log(obmm);        // converted map
 
 ```
 
-* forEach function on map
+- forEach function on map
+
 ```javaScript
 
 map.forEach((value, key) => {
   console.log(value, key);
 });
+```
+
+- weakmap
+
+```javaScript
+console.log("hii");
+const weakmap = new WeakMap();
+// weakmap.set(1, 100); // error Invalid value used as weak map key
+// weakmap.set(2, 200);// primitive data ko key ke roop me allow nhi krta he
+
+obj1 = { name: "aarif" };
+obj2 = { name: "aarif2" };
+obj3 = { name: "aarif3" };
+obj4 = { name: "aarif4" };
+weakmap.set(obj1, 100); // right way
+weakmap.set(obj2, 200); // right way
+weakmap.set(obj3, 300); // right way
+weakmap.set(obj4, 400); // right way
+console.log(weakmap); // print -- WeakMap {{…} => 100, {…} => 200, {…} => 400, {…} => 300}
+
+obj1 = null;
+for (let i = 0; i <= 10000; i++) {
+  // active garbj collector and delet faltu ka data
+  console.log(i);
+}
+console.log(weakmap); // print  -- {{…} => 200, {…} => 400, {…} => 300}
 ```
