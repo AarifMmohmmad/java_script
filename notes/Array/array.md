@@ -10,7 +10,7 @@
 - How to create an Array -- []
 - Array Literal -- []
 - Array Object -- new Array()
-- Index in Array -- Any value has an index with the help of which we can access it which we write like this arrayNmae[number]
+- Index in Array -- Any value has an index with the help of which we can access it which we write like this arrayName[number]
 - Array length property --- Returns the number of values in an array. /
   -- This number are one higher than the highest index in the array.
 
